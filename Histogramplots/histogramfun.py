@@ -1,8 +1,12 @@
 import pylab
-
+import os
 # You may have to change this path
-WORDLIST_FILENAME = "C:/Wei Cui/Edx8.00x/6.00.2x Files/L4P5/words.txt"
+#WORDLIST_FILENAME = "C:/Wei Cui/Edx8.00x/6.00.2x Files/L4P5/words.txt"
 
+dir = os.path.dirname(__file__)
+relFilename = os.path.join(dir, "words.txt")
+
+WORDLIST_FILENAME = relFilename;
 
 def loadWords():
     """
